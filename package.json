@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --hot --open --mode development",
-    "build": "node.exe .\\node_modules\\webpack\\bin\\webpack.js --mode production",
-    "prettier": "prettier  — write src/**/*"
+    "build": "node.exe .\\node_modules\\webpack\\bin\\webpack.js --mode production"
   },
   "author": "",
   "license": "ISC",
@@ -17,10 +16,10 @@
     "@types/react-redux": "^6.0.9",
     "@types/react-router": "^4.4.0",
     "@types/react-router-dom": "^4.3.1",
-    "@types/redux": "^3.6.0",
+    "@types/redux": "^3.6.31",
     "@types/redux-devtools-extension": "^2.13.2",
     "@types/redux-persist": "^4.3.1",
-    "@types/redux-thunk": "^2.1.0",
+    "@types/redux-thunk": "^2.1.32",
     "@types/webpack-dev-middleware": "^2.0.2",
     "@types/webpack-hot-middleware": "^2.16.4",
     "@typescript-eslint/eslint-plugin": "^1.11.0",
@@ -41,7 +40,7 @@
     "ts-loader": "^5.3.0",
     "typescript": "^3.1.4",
     "url-loader": "^1.1.2",
-    "webpack": "^4.23.1",
+    "webpack": "^4.35.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-middleware": "^3.4.0",
     "webpack-dev-server": "^3.1.10",
