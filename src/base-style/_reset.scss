@@ -137,6 +137,7 @@ input,
 button,
 select {
   outline: none;
+  border: none;
 }
 
 input[type='text']::-ms-clear {

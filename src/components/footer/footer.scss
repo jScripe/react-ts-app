@@ -1,0 +1,15 @@
+@import '../../base-style/variables';
+@import '../../base-style/mixins';
+
+.footer {
+  margin-top: auto;
+  background: $main-text-color;
+
+  &__content {
+    @include main-container();
+    padding: 15px 5px;
+    @include kodchasan-bold();
+    font-size: 20px;
+    color: $main-color;
+  }
+}

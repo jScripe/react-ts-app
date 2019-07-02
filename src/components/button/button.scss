@@ -1,0 +1,29 @@
+@import '../../base-style/variables';
+@import '../../base-style/mixins';
+
+.button {
+  padding: 10px 40px;
+  width: 200px;
+  background: $main-color;
+  border-radius: 3px;
+  @include kodchasan-bold();
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    color: $main-text-color;
+  }
+
+  &:active {
+    color: $white;
+  }
+
+  @include mobile {
+    padding: 6px 20px;
+    width: 120px;
+    @include kodchasan-regular();
+  }
+}

@@ -1,0 +1,46 @@
+@mixin main-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@mixin page-element-flow {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobile-vertical {
+  @media only screen and (max-width: 534px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin kodchasan-regular() {
+  font-family: 'Kodchasan', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin kodchasan-medium() {
+  font-family: 'Kodchasan', sans-serif;
+  font-style: normal;
+  font-weight: medium;
+}
+
+@mixin kodchasan-bold() {
+  font-family: 'Kodchasan', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}

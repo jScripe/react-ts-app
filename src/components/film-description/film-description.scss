@@ -1,0 +1,80 @@
+@import '../../base-style/variables';
+@import '../../base-style/mixins';
+
+.film-description {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./background.jpg');
+
+  &__alignment {
+    @include main-container;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  &__logo {
+    align-self: flex-start;
+    text-decoration: none;
+  }
+
+  &__content {
+    display: flex;
+    margin: 35px 0;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    margin-right: 70px;
+    width: 250px;
+    height: 370px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    color: $white;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    margin-right: 20px;
+    @include kodchasan-bold();
+    font-size: 32px;
+    color: $main-color;
+  }
+
+  &__raiting {
+    padding: 10px;
+    border: 1px solid $border-raiting;
+    border-radius: 20px;
+  }
+
+  &__time-content {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    @include kodchasan-bold();
+    letter-spacing: 1px;
+  }
+
+  &__year {
+    margin-right: 50px;
+  }
+
+  &__text {
+    margin-top: 35px;
+    max-width: 700px;
+  }
+}

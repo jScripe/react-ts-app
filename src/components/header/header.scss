@@ -1,0 +1,32 @@
+@import '../../base-style/mixins';
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./background.jpg');
+
+  &__wrapper {
+    @include main-container();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 5px;
+    min-height: 250px;
+
+    @include mobile {
+      justify-content: center;
+      min-height: 150px;
+    }
+  }
+
+  &__logo {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+}

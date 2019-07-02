@@ -1,0 +1,40 @@
+@import '../../base-style/variables';
+@import '../../base-style/mixins';
+
+.type-sort {
+  display: flex;
+  align-items: center;
+  @include kodchasan-bold();
+
+  &__label {
+    margin-right: 20px;
+    font-size: 16px;
+    color: $main-text-color;
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  &__radio {
+    display: none;
+
+    &:checked + label {
+      color: $main-color;
+    }
+  }
+
+  &__button {
+    font-size: 14px;
+    color: $main-text-color;
+    cursor: pointer;
+
+    &:last-child {
+      margin-left: 10px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import '../../base-style/variables';
+@import '../../base-style/mixins';
+
+.type-search {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    margin-right: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $white;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__radio {
+    display: none;
+
+    &:checked + label {
+      background: $main-color;
+    }
+  }
+
+  &__button {
+    padding: 6px 20px;
+    background: $background-button;
+    border-radius: 3px;
+    @include kodchasan-bold();
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: $white;
+    cursor: pointer;
+
+    &:last-child {
+      margin-left: 10px;
+    }
+
+    @include mobile {
+      padding: 3px 10px;
+      @include kodchasan-regular();
+    }
+  }
+}

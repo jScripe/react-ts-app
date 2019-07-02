@@ -1,0 +1,9 @@
+@import './reset';
+@import './mixins';
+
+html,
+body,
+#app {
+  height: 100%;
+  @include kodchasan-regular();
+}

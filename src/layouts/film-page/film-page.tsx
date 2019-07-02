@@ -1,17 +1,17 @@
 import * as React from 'react';
 
-import { Header } from '../../components/header/header';
 import { Footer } from '../../components/footer/footer';
 import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs';
 import { Films } from '../../components/films/films';
+import { FilmDescription } from '../../components/film-description/film-description';
 
-import './main-page.scss';
+import './film-page.scss';
 
-export class MainPage extends React.Component {
+export class FilmPage extends React.Component {
   public render(): JSX.Element {
     return (
-      <div className="main-page">
-        <Header />
+      <div className="film-page">
+        <FilmDescription />
         <Breadcrumbs />
         <Films />
         <Footer />

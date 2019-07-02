@@ -1,0 +1,9 @@
+@import '../../base-style/mixins';
+@import '../../base-style/variables';
+
+.films {
+  @include main-container();
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0 20px;
+}

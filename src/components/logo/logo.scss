@@ -1,0 +1,9 @@
+@import '../../base-style/variables';
+@import '../../base-style/mixins';
+
+.logo {
+  padding: 20px 0;
+  @include kodchasan-bold();
+  font-size: 20px;
+  color: $main-color;
+}

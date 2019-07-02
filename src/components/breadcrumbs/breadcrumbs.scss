@@ -1,0 +1,23 @@
+@import '../../base-style/variables';
+@import '../../base-style/mixins';
+
+.breadcrumbs {
+  background: $main-background;
+
+  &__content {
+    @include main-container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+  &__films-found {
+    @include kodchasan-medium();
+    font-size: 16px;
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../base-style/mixins';
+@import '../../base-style/variables';
+
+.no-films-found {
+  @include page-element-flow();
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    @include kodchasan-bold();
+    font-size: 48px;
+    color: $main-text-color;
+
+    @include mobile {
+      font-size: 36px;
+    }
+  }
+}
